@@ -4,6 +4,7 @@ import logo from "../assets/img/logo.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import resume from "../assets/Cameron_ToyResume2022_.pdf";
 
 export const Banner = () => {
 const [loopNum, setLoopNum] = useState(0);
@@ -61,11 +62,10 @@ return (
                 <p>In my web development course, I have learned about the various technologies and frameworks used to build and maintain modern web applications. Through hands-on projects, I have gained experience in backend technologies such as servers, databases, and server-side programming languages like Python. I have also learned about front-end technologies like HTML, CSS, and JavaScript (React, Express), which are used to create user-friendly and responsive websites. </p>
                 <p>My studies in artificial intelligence have included a course in reinforcement learning, where I have learned about AI algorithms and their applications. This course has allowed me to work with real-world data and build models to make decisions and adapt to changing environments.</p>
                 <p>Overall, my coursework has given me a well-rounded education in computer science and has prepared me for a career as a software engineer. I am eager to apply my skills and knowledge to develop innovative and practical solutions for various problems.</p>
-                <button onClick={() => window.open("./../assets/Cameron_ToyResume2022_.pdf", '_blank')}>
-                Resume
+                <a href= {resume}>
+                <div className = 'resume-button'>Resume</div>
                 <ArrowRightCircle size={25} />
-                </button>
-
+                </a>
             </div>}
             </TrackVisibility>
         </Col>
