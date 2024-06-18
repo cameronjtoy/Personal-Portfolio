@@ -6,17 +6,28 @@ import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Footer } from "./components/Footer";
+import React, {Component} from "react";
+import { Route, Routes } from "react-router";
+import { BrowserRouter } from "react-router-dom";
+import { Nav, Navbar } from 'react-bootstrap';
 
-function App() {
-  return (
-    <div className="App">
-      <NavBar />
-      <Banner />
-      <Skills />
-      <Projects />
-      <Footer />
-    </div>
-  );
+
+export default class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={
+            <div className="App">
+              <Banner />
+              <Skills />
+              <Projects />
+              <Footer />
+            </div>
+          } />
+        </Routes>
+      </BrowserRouter>
+    );
+  }
 }
-
-export default App;
