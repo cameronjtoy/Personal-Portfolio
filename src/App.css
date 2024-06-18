@@ -294,7 +294,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
+.banner a {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -303,13 +303,13 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   display: flex;
   align-items: center;
 }
-.banner button svg {
+.banner a svg {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
-.banner button:hover svg {
+.banner a:hover svg {
   margin-left: 25px;
 }
 .banner img {
