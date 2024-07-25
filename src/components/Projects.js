@@ -8,6 +8,11 @@ import productspace from "../assets/img/productspace.png";
 import chess from "../assets/img/chess.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import vizier from "../assets/img/vizier.png";
+import room8 from "../assets/img/room8.png";
+import parallel from "../assets/img/parallel.png";
+import stony from "../assets/img/stony.png";
+import dfg from "../assets/img/dfg.png";
 
 export const Projects = () => {
 
@@ -33,16 +38,48 @@ const projects = [
     imgUrl: chess,
 },
 {
-    title: "Product Space (Coming Soon)",
+    title: "Product Space",
     description: "Product Space Website built with React and Bootstrap", 
     imgUrl: productspace,
 },
 {
-    title: "Carrer AIO (Coming Soon)",
-    description: "Full Stack Web Application using MERN Stack and Bootstrap for UI Design and React for Frontend Development and Node.js for Backend Development and MongoDB for Database.",
+    title: "Board",
+    description: "Community based application to help people grow their community through data",
     imgUrl: comingsoon,
 }
 ];
+
+const schoolProjects = [
+    {
+        title: "Room8",
+        description: "Room8 is a web application that allows users to split bills and keep track of expenses with their roommates.",
+        imgUrl: room8,
+    },
+    {
+        title: "Vizier",
+        description: "Vizier is an data workbook that focuses on reproducibility and data workflow.",
+        imgUrl: vizier,
+    },
+    {
+        title: "Parallel Diffusion",
+        description: "Parallel Diffusion is a project that focuses on parallel programming and diffusion algorithms.",
+        imgUrl: parallel,
+    }
+];
+
+const careerProjects = [
+    {
+        title: "Develop for Good",
+        description: "Develop for Good is a non-profit organization that provides software development services to other non-profits.",
+        imgUrl: dfg,
+    },
+    {
+        title: "Stony Brook Adminstrative Services, LLC",
+        description: "Stony Brook Administrative Services, LLC is a company that provides administrative services to small businesses.",
+        imgUrl: stony,
+    }
+];
+
 
 return (
 <section className="project" id="projects">
@@ -82,10 +119,32 @@ return (
                     </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
-                    <p></p>
+                <Row>
+                    {
+                        schoolProjects.map((project, index) => {
+                        return (
+                            <ProjectCard
+                            key={index}
+                            {...project}
+                            />
+                        )
+                        })
+                    }
+                    </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
-                    <p></p>
+                <Row>
+                    {
+                        careerProjects.map((project, index) => {
+                        return (
+                            <ProjectCard
+                            key={index}
+                            {...project}
+                            />
+                        )
+                        })
+                    }
+                    </Row>
                 </Tab.Pane>
                 </Tab.Content>
             </Tab.Container>

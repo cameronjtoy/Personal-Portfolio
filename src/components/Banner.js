@@ -4,7 +4,7 @@ import logo from "../assets/img/logo.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import resume from "../assets/Cameron_ToyResume2022_.pdf";
+import resume from "../assets/Cameron_Toy_Resume_2024 (2).pdf";
 
 export const Banner = () => {
 const [loopNum, setLoopNum] = useState(0);
@@ -58,10 +58,9 @@ return (
             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Cameron Toy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Software Engineer", "Student" ]'><span className="wrap">{text}</span></span></h1>
-                <p>As a computer science major with a passion for software engineering, I have had the opportunity to study various topics that have prepared me for a career in this field. My studies have focused on data structures and algorithms, providing me with a strong foundation in problem-solving and computer science concepts. In addition, I have also taken a course in web development, with a focus on backend technologies.</p>
-                <p>In my web development course, I have learned about the various technologies and frameworks used to build and maintain modern web applications. Through hands-on projects, I have gained experience in backend technologies such as servers, databases, and server-side programming languages like Python. I have also learned about front-end technologies like HTML, CSS, and JavaScript (React, Express), which are used to create user-friendly and responsive websites. </p>
-                <p>My studies in artificial intelligence have included a course in reinforcement learning, where I have learned about AI algorithms and their applications. This course has allowed me to work with real-world data and build models to make decisions and adapt to changing environments.</p>
-                <p>Overall, my coursework has given me a well-rounded education in computer science and has prepared me for a career as a software engineer. I am eager to apply my skills and knowledge to develop innovative and practical solutions for various problems.</p>
+                <p>My journey as a computer science major has fueled my passion for developing innovative products that make a real impact. From an early interest in technology, I have always been fascinated by how software can solve problems and improve lives. This passion led me to pursue a degree in computer science, where I delved into various subjects such as data structures, algorithms, and web development. My coursework provided a strong foundation in problem-solving and computer science principles, while hands-on projects allowed me to explore backend technologies like Go and a MERN stack (MongoDB, Express, React, Node.js) to create user-friendly and efficient software solutions, further enhancing my ability to develop and deploy robust web applications.</p>
+
+                <p>Beyond academics, my practical experiences have solidified my love for product development. As a Research Assistant at the University at Buffalo, I worked on optimizing data visualization modules and developing innovative tools with Apache Spark and Scala. These projects taught me the importance of designing scalable and efficient systems. Additionally, my involvement in various hackathons and volunteer work as a software engineer provided opportunities to pitch ideas and work closely with clients, further honing my skills in creating impactful products. I am eager to continue this journey, leveraging my skills and passion to develop cutting-edge software solutions that address real-world challenges.</p>
                 <a href= {resume}>
                 <div className = 'resume-button'>Resume</div>
                 <ArrowRightCircle size={25} />
